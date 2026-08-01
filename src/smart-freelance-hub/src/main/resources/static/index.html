@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Smart Freelance Hub</title>
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- ================= NAVIGATION BAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Smart Freelance Hub
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Find Projects</a>
+        <a href="#freelancers">Freelancers</a>
+        <a href="#how-it-works">How It Works</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+    </div>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            SMART FREELANCE PLATFORM
+        </p>
+
+        <h1>
+            Find the Right Project.
+            <span>Build Your Future.</span>
+        </h1>
+
+        <p class="hero-text">
+            Connect talented freelancers with exciting projects
+            and build successful professional relationships.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search projects, skills or categories..."
+            >
+
+            <button onclick="searchProjects()">
+                Search Projects
+            </button>
+
+        </div>
+
+        <div class="hero-buttons">
+
+            <button
+                class="primary-btn"
+                onclick="findProjects()">
+                Find Projects
+            </button>
+
+            <button
+                class="secondary-btn"
+                onclick="postProject()">
+                Post a Project
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <div class="section-heading">
+
+        <p>EXPLORE OPPORTUNITIES</p>
+
+        <h2>Popular Categories</h2>
+
+    </div>
+
+    <div class="category-container">
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                💻
+            </div>
+
+            <h3>Web Development</h3>
+
+            <p>
+                Build modern websites and applications.
+            </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                ☕
+            </div>
+
+            <h3>Java Development</h3>
+
+            <p>
+                Create powerful Java applications.
+            </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🎨
+            </div>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+                Design beautiful digital experiences.
+            </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🐍
+            </div>
+
+            <h3>Python</h3>
+
+            <p>
+                Develop intelligent applications.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED PROJECTS ================= -->
+
+<section class="projects" id="projects">
+
+    <div class="section-heading">
+
+        <p>DISCOVER WORK</p>
+
+        <h2>Featured Projects</h2>
+
+    </div>
+
+    <div class="project-container">
+
+
+        <div class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-category">
+                    Java
+                </span>
+
+                <span class="budget">
+                    ₹20,000
+                </span>
+
+            </div>
+
+            <h3>Java Backend Developer</h3>
+
+            <p>
+                Looking for a Java developer to build a
+                Spring Boot based application.
+            </p>
+
+            <div class="skills">
+
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+
+            </div>
+
+            <button class="view-btn">
+                View Project
+            </button>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-category">
+                    Design
+                </span>
+
+                <span class="budget">
+                    ₹15,000
+                </span>
+
+            </div>
+
+            <h3>UI/UX Website Design</h3>
+
+            <p>
+                Design a modern and responsive website
+                for a growing startup.
+            </p>
+
+            <div class="skills">
+
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Design</span>
+
+            </div>
+
+            <button class="view-btn">
+                View Project
+            </button>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-category">
+                    Web
+                </span>
+
+                <span class="budget">
+                    ₹25,000
+                </span>
+
+            </div>
+
+            <h3>Full Stack Web Application</h3>
+
+            <p>
+                Build a complete web application with
+                frontend and backend integration.
+            </p>
+
+            <div class="skills">
+
+                <span>HTML</span>
+                <span>JavaScript</span>
+                <span>Spring Boot</span>
+
+            </div>
+
+            <button class="view-btn">
+                View Project
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-it-works" id="how-it-works">
+
+    <div class="section-heading">
+
+        <p>SIMPLE PROCESS</p>
+
+        <h2>How Smart Freelance Hub Works</h2>
+
+    </div>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>Find a Project</h3>
+
+            <p>
+                Browse projects that match your skills.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>Apply</h3>
+
+            <p>
+                Send your proposal to the project owner.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>Work</h3>
+
+            <p>
+                Complete the project professionally.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                4
+            </div>
+
+            <h3>Get Paid</h3>
+
+            <p>
+                Receive payment after successful completion.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Start Freelancing?
+    </h2>
+
+    <p>
+        Join Smart Freelance Hub and discover your next opportunity.
+    </p>
+
+    <button onclick="findProjects()">
+        Explore Projects
+    </button>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Smart Freelance Hub
+    </div>
+
+    <p>
+        Connecting freelancers with opportunities.
+    </p>
+
+    <p class="copyright">
+        © 2026 Smart Freelance Hub. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
